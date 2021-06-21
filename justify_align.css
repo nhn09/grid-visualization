@@ -74,7 +74,7 @@
    
     .button{
         grid-template-columns: repeat(3, minmax(60px, 1fr));
-        grid-template-rows: 60px ;
+        grid-template-rows: 60px 30px 30px 30px 30px 30px 30px;
         justify-content: center;
         padding: 0 0 20px 0;
     }
