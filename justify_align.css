@@ -67,9 +67,14 @@
 
 }
 
- @media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
+     *{
+         font-size: 12px !important;
+     }
+   
     .button{
-        grid-template-columns: repeat(3, minmax(50px, 1fr));
+        grid-template-columns: repeat(3, minmax(60px, 1fr));
+        grid-template-rows: 60px ;
         justify-content: center;
         padding: 0 0 20px 0;
     }
@@ -78,14 +83,15 @@
     {
     grid-column: span 3;
     }
-    .space-evenly 
+    .space-evenly ,.space-around
     {
-        grid-column: span 2;
+        grid-column: span 3;
     }
     .reset{
 
         margin: auto;
         justify-content: center;
     }
+
     
   }  
