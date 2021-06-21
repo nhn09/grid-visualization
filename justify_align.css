@@ -37,6 +37,10 @@
 .justify-items , .align-items
 {
     grid-column: span 2;
+    background-color: #ffeead !important;
+    color: #ff6f69 !important;
+    box-shadow: none !important;
+
 }
 
 .Topic
@@ -62,3 +66,26 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+
+ @media only screen and (max-width: 700px) {
+    .button{
+        grid-template-columns: repeat(3, minmax(50px, 1fr));
+        justify-content: center;
+        padding: 0 0 20px 0;
+    }
+
+    .justify-items , .align-items
+    {
+    grid-column: span 3;
+    }
+    .space-evenly 
+    {
+        grid-column: span 2;
+    }
+    .reset{
+
+        margin: auto;
+        justify-content: center;
+    }
+    
+  }  
